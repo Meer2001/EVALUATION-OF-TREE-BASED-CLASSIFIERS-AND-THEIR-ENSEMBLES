@@ -9,6 +9,7 @@ This project looks at tree-based classifiers and their ensemble methods. It uses
 - Gradient Boosting
 The primary metrics used in the project for measuring performance are: Accuracy and F1 score.
 
+```text
 
 cnf-classification-project/
 │
@@ -73,12 +74,14 @@ cnf-classification-project/
 │
 └── AI_TRANSCRIPT.md # AI conversation transcript
 
-##DATASETS
+```
+
+## **DATASETS**
 
 1. CNF Synthetic Datasets: Five CNF formulas of size 500 variables and with varying clause sizes {300, 500, 1000, 1500, 1800} were created. For every formula, positive and negative examples of sizes 100, 1000, and 5000 were randomly selected. The datasets are divided into train, validation, and test splits. All the features are binary (0/1), and the label is 1 if the assignment to the variable is a model of the CNF formula and 0 otherwise.
 2. MNIST Dataset: The MNIST dataset consists of 60,000 training images and 10,000 test images of handwritten digits (28×28 grayscale). It is utilized to test the classifiers on a standard real-world image classification task.
 
-##DEPENDENCIES
+## **DEPENDENCIES**
 
 This project is written in Python 3.9+ and the requirements are:
 ● Python 3.9+
@@ -89,7 +92,7 @@ The dependencies can be used by installing them using this code:
 pip install numpy pandas scikit-learn matplotlib tqdm
 
 
-##INSTALLATION AND SETUP
+## **INSTALLATION AND SETUP**
 
 1. Download the project files into a local folder.
 2. Ensure all dependencies are installed using the command above.
@@ -100,10 +103,10 @@ valid_c[i]_d[j].csv
 test_c[i]_d[j].csv
 For MNIST, the dataset will be automatically downloaded.
 
-##HOW TO RUN THE PROJECT
+## **HOW TO RUN THE PROJECT**
 To run the experiment, use: python decisionTree.py
 
-##STEPS USED IN THIS PROJECT - MNIST
+## **STEPS USED IN THIS PROJECT - MNIST**
 
 1. Data Loading & Preprocessing
 - MNIST data loaded with fetch_openml("mnist_784")
@@ -132,13 +135,13 @@ Identify the highest performing classifier
 Save results to mnist_results.json
 
 
-##METRICS USED
+## **METRICS USED**
 
 - Accuracy - provides fraction of correctly classified samples
 - F1 Score - provides harmonic mean of precision and recall, useful for imbalanced data
 - Training Time - provides total time (in seconds/minutes) taken to train and evaluate each model
 
-##FUTURE IMPROVEMENTS
+## **FUTURE IMPROVEMENTS**
 - Implement automated hyperparameter search using GridSearchCV or RandomizedSearchCV
 - Add visualizations for confusion matrices and accuracy comparisons
 - Extend analysis to include precision, recall, and ROC-AUC metrics
